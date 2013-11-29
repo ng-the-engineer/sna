@@ -1,3 +1,6 @@
+import pandas as pd
+import numpy as np
+
 data = np.loadtxt('hsindex.csv', dtype='str', delimiter=',')
 pdata = data[:,2:4]
 s = pd.Series(pdata[:,0])

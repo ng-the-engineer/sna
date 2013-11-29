@@ -1,3 +1,6 @@
+import pandas as pd
+import numpy as np
+
 data = np.loadtxt('hsindex.csv', dtype='str', delimiter=',')
 stocks = pd.Series(data[:,0])
 s = stocks.unique()
